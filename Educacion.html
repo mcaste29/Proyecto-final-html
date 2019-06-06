@@ -3,76 +3,109 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="author" content="Michael Castellanos">
+    <meta name="keywords" content="html,imagenes,videos">
+    <meta name="description" content="Evaluacion final fundamentos basicos de html">
     <title>Hoja de Vida</title>
   </head>
     <body>
       <header>
-      <svg wight="150px" height="150px"  viewbox="0 0 150 150">
+        <svg wight="150px" height="150px"  viewbox="0 0 150 150">
         <image wight="600px" height="600px" xlink:href="C:\Users\ADMIN\Desktop\Michael\Michael\Next U\Examen Final\Simbolo.svg"></image>
+        </svg>
+
         <h1><center>Hoja de Vida</center><h1>
-        <h1>Datos Personales</h1>
-        <h2><em>Nombres:</em>Michael</h2>
-        <h2><em>Apellidos:</em>Castellanos Arregoces</h2>
-        <h3><em>Fecha:</em>02 de diciembre de 1983</h3>
-        <h3><em>Lugar de nacimiento:</em>Bogota</h3>
+      </header>
+
+      <section>
+        <article>
+
+        <h2>Datos Personales</h2>
+        <h3><em>Nombres:</em> Michael</h3>
+        <h3><em>Apellidos:</em> Castellanos Arregoces</h3>
+        <h3><em>Fecha:</em> 02 de diciembre de 1983</h3>
+        <h3><em> Lugar de nacimiento:</em> Bogota</h3>
+
+        </article>
+      </section>
+
+        <nav>
+
+          <ul>
+        	<li><a href="index.html">Inicio</a></li>
+          <li><a href="Educacion.html">Educación</a></li>
+        	<li><a href="Experiencia.html">Experiencia</a></li>
+          </ul>
+
+        </nav>
+
+        <section>
+          <h2>Educación</h2>
+            <article>
+
+            <table border="1">
+              <tr>
+                <th>Año</th>
+                <th>Institución</th>
+                <th>Lugar</th>
+                <th>Titulo</th>
+              </tr>
+              <tr>
+                <td>2002</td>
+                <td>Safana</td>
+                <td>Bogotá</td>
+                <td>Bachiller</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td>Uniminuto</td>
+                <td>Bogotá</td>
+                <td>Tecnico electronica</td>
+              </tr>
+              <tr>
+                <td>2015</td>
+                <td>Smart</td>
+                <td>Bogotá</td>
+                <td>Ingles</td>
+              </tr>
+            </table>
+          </article>
 
 
-        <h1>Enlaces de Menù</h1>
-        <ul>
-          <li><a href="C:\Users\ADMIN\Desktop\Michael\Michael\Next U\Examen Final\index.html">Inicio</a></li>
-          <li><a href="C:\Users\ADMIN\Desktop\Michael\Michael\Next U\Examen Final\Experiencia.html">Experiencia</a></li>
-        </ul>
-
-
-        <h2>Educación</h2>
-
-        <table border="1">
-          <tr>
-            <th>Año</th>
-            <th>Institución</th>
-            <th>Lugar</th>
-            <th>Titulo</th>
-          </tr>
-          <tr>
-            <td>2002</td>
-            <td>Safana</td>
-            <td>Bogotá</td>
-            <td>Bachiller</td>
-          </tr>
-          <tr>
-            <td>2008</td>
-            <td>Uniminuto</td>
-            <td>Bogotá</td>
-            <td>Tecnico electronica</td>
-          </tr>
-          <tr>
-            <td>2015</td>
-            <td>Smart</td>
-            <td>Bogotá</td>
-            <td>Ingles</td>
-          </tr>
-        </table>
-        <form>
+          <article>
             <h2>Agregar Estudios</h2>
-              <p>Año
-                <input type="number" min="1950">
+          <form>
+            <p>
+              <label for="annio">Selecciona el año: </label>
+                      <br>
+                      <select name="annio">
+                          <option value="2019">2019</option>
+                          <option value="2018">2018</option>
+                          <option value="2017">2017</option>
+                          <option value="2016">2016</option>
+                          <option value="2015">2015</option>
+                      </select>
               </p>
-              <p>Institución:
-              <input type="text" required>
+              <p>
+                <label for="Institucion">Institución:</label>
+                  <input type="text" name="institucion" required>
               </p>
-              <p>Lugar:
-	            <textarea cols="30" rows="3" placeholder="ciudad"></textarea>
+              <p>
+                <label for="lugar">Lugar:</label>
+                  <textarea cols="30" rows="3" placeholder="ciudad"></textarea>
               </p>
               <!---enviar---->
               <p>
-              <input type="submit">
+              <input type="submit" value="Enviar">
               </p>
-        </header>
+            </form>
+          </article>
+        </section>
+
+
+        <footer>
+          <a href="mailto:michaelcastellanos83@gmail.com" target="_blank">  Contacto | </a><a href="https://www.facebook.com/michael.castellanos.357" target="_blank">   Facebook | <a>  Movil de contacto: 3196239934 </a>
+
+        </footer>
       </body>
-
-      <footer>
-      <a href="mailto:michaelcastellanos83@gmail.com" target="_blank">Contacto |</a><a href="https://www.facebook.com/michael.castellanos.357" target="_blank">   Facebook |
-
-      </footer>
-
 </html>
